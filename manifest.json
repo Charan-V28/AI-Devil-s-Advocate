@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI Devil's Advocate",
+  "version": "1.0.0",
+  "description": "Analyze web articles and generate counter-arguments.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AI Devil's Advocate",
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
